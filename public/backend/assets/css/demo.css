@@ -1,0 +1,247 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.menu .app-brand.demo {
+  height: 64px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.trun-text {
+  display: -webkit-box;
+  max-height: 3.2rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  line-height: 1.6rem;
+}
+
+.img__container_admin {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 3px;
+  overflow: hidden;
+}
+
+.img__container_admin img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  image-rendering: pixelated;
+}
+
+.alert-success {
+  background-color: #33b4d1 !important;
+}
+.alert-danger {
+  background-color: #ED2B2A !important;
+}
+.alert-info {
+  background-color: #3976e9 !important;
+}
+.alert-success.active {
+  transform: translateX(0);
+  animation: alert 1s linear forwards;
+}
+.alert-info.active {
+  transform: translateX(0);
+  animation: alert 1s linear forwards;
+}
+
+.alert-success {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.625rem;
+  z-index: 999999;
+}
+
+.alert-info {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.625rem;
+  z-index: 999999;
+}
+
+.alert-danger.active {
+  transform: translateX(0);
+  animation: alert 1s linear forwards;
+}
+
+.alert-danger {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.625rem;
+  z-index: 999999;
+}
+
+.buy-now .alert {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.buy-now #btn-remove{
+  background-color: #eaf17c !important;
+}
+a#del-all {
+  background-color: #ff2828 !important;
+  border-color: #ff2828 !important;
+}
+/* edf575 */
+
+#btn-restore {
+  background-color: #2cad1c !important;
+  border-color: #2cad1c !important;
+}
+
+@keyframes alert {
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  100%
+  {
+    transform: translateY(100px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.avatar {
+  height: 2.375rem;
+  width: 2.375rem;
+  background-color: #E0F7FC;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-online {
+  background-color: unset;
+}
+
+.fa-shopping-bag {
+  color: #1BC8EE;
+}
+
+.fa-paypal {
+  color: #FFAC02;
+}
+
+.fa-user {
+  color: #767BFF;
+}
+
+.fa-chrome {
+  color: #71DD37;
+}
+#cke_1_contents {
+  height: 500px !important;
+}
